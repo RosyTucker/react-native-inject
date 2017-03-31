@@ -1,7 +1,6 @@
 const dotEnv = require('dotenv');
 const fs = require('fs');
 const process = require('process');
-const babel = require("babel-core");
 
 const MODULE_NAME = 'react-native-inject';
 

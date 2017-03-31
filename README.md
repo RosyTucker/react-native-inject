@@ -8,8 +8,8 @@ native dependency.
 Installation
 ============
 
-- Npm : `npm install --save-dev react-native-inject`
-- Yarn: `yarn add -D react-native-inject`
+- Npm : `npm install react-native-inject`
+- Yarn: `yarn add react-native-inject`
 
 Basic Usage
 ===========
@@ -44,7 +44,7 @@ You can define a custom environment config by setting the INJECT variable before
 INJECT=./some/path/to/.env.qa react-native run-ios
 ```
 
-See the example for more details
+See the example for more details, to run the example you need to have `babel-cli` installed globally.
 
 Technically there is no reason why this plugin cannot be used with react/JS in general
 so long as the project uses babel and es0215
