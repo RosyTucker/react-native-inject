@@ -17,8 +17,7 @@ Basic Usage
 Add the following to your `.babelrc`
 
 ```
-"presets": ["react-native"],
-"plugins": ["react-native-inject"]
+"presets": ["react-native", "react-native-inject"]
 ```
 
 

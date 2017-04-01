@@ -1,8 +1,5 @@
 {
   "presets": [
-    "es2015"
-  ],
-  "plugins": [
-    "../index.js"
+    "es2015", "../index.js"
   ]
 }
