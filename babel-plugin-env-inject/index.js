@@ -33,11 +33,11 @@ module.exports = function (data) {
         }
 
         // Read the env config
-        const injectFilePath = process.env.INJECT || '.env';
+        const injectFilePath = process.env.RN_INJECT || '.env';
         const environmentConfig = dotEnv.config({ path: injectFilePath, silent: true });
 
         if (!environmentConfig) {
-          throw new Error('Failed to load INJECT file at location: ', injectFilePath);
+          throw new Error('Failed to load RN_INJECT file at location: ', injectFilePath);
         }
 
         // Turn the config into an abstract syntax tree

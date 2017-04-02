@@ -8,8 +8,8 @@ native dependency.
 Installation
 ============
 
-- Npm : `npm install react-native-inject`
-- Yarn: `yarn add react-native-inject`
+- Npm : `npm install react-native-inject --save-dev`
+- Yarn: `yarn add -D react-native-inject`
 
 Basic Usage
 ===========
@@ -40,7 +40,10 @@ Advanced Usage
 
 You can define a custom environment config by setting the INJECT variable before building e.g:
 ```
-INJECT=./some/path/to/.env.qa react-native run-ios
+// Inject from the .env.qa file
+export RN_INJECT=./some/path/to/.env.qa;
+
+react-native run-ios
 ```
 
 See the example for more details, to run the example you need to have `babel-cli` installed globally.
@@ -54,3 +57,11 @@ Further Reading
 
 For more information on writing babel plugins go
 [here](https://github.com/thejameskyle/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-definitions)
+
+
+Changelog
+=========
+
+### 0.0.10
+
+Change environment variable name from INJECT to RN_INJECT to reduce chance of clash

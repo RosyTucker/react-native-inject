@@ -1,13 +1,13 @@
 {
   "name": "react-native-inject",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "React native babel plugin for injecting an environment",
   "main": "index.js",
   "scripts": {
-    "example-dev": "INJECT=./example/.env.dev babel-node ./example/index.js",
-    "example-test": "INJECT=./example/.env.test babel-node ./example/index.js",
-    "example-dev-build": "INJECT=./example/.env.dev babel ./example/index.js --out-file transpiled.dev.js",
-    "example-test-build": "INJECT=./example/.env.test babel ./example/index.js --out-file transpiled.test.js"
+    "example-dev": "RN_INJECT=./example/.env.dev babel-node ./example/index.js",
+    "example-test": "RN_INJECT=./example/.env.test babel-node ./example/index.js",
+    "example-dev-build": "RN_INJECT=./example/.env.dev babel ./example/index.js --out-file transpiled.dev.js",
+    "example-test-build": "RN_INJECT=./example/.env.test babel ./example/index.js --out-file transpiled.test.js"
   },
   "keywords": [
     "dotenv",
@@ -19,7 +19,7 @@
   "author": "Rose Tucker",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-env-inject": "^0.0.7"
+    "babel-plugin-env-inject": "^0.0.10"
   },
   "devDependencies": {
     "babel-preset-es2015": "6.24.0"
