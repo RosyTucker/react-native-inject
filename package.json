@@ -1,6 +1,6 @@
 {
   "name": "react-native-inject",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "React native babel plugin for injecting an environment",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "author": "Rose Tucker",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-env-inject": "^0.0.3"
+    "babel-plugin-env-inject": "^0.0.7"
   },
   "devDependencies": {
     "babel-preset-es2015": "6.24.0"

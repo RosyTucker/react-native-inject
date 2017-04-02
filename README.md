@@ -8,8 +8,8 @@ native dependency.
 Installation
 ============
 
-- Npm : `npm install react-native-inject` and `npm install babel-plugin-env-inject --save-dev`
-- Yarn: `yarn add react-native-inject` and `yarn add -D babel-plugin-env-inject`
+- Npm : `npm install react-native-inject`
+- Yarn: `yarn add react-native-inject`
 
 Basic Usage
 ===========
