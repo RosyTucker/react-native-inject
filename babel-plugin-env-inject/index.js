@@ -6,8 +6,8 @@ const MODULE_NAME = 'react-native-inject';
 module.exports = function (data) {
   const types = data.types;
 
-  function getImportVariableName(path) {
-    return Object.keys(path.scope.bindings)[0];
+  function getImportVariableName(node) {
+    return node.specifiers[0].local.name;
   }
 
   // Only supports strings
@@ -22,7 +22,6 @@ module.exports = function (data) {
       // ImportDeclaration is the type of the syntax tree token to modify
       ImportDeclaration(path) {
         const currentNode = path.node;
-
         // Ignore any imports that are not the 'react-native-inject' module
         if (currentNode.source.value !== MODULE_NAME) {
           return;
@@ -48,7 +47,7 @@ module.exports = function (data) {
 
         const configAst = types.objectExpression(configEntries);
 
-        const nameOfImport = getImportVariableName(path);
+        const nameOfImport = getImportVariableName(currentNode);
 
         // Swap the import declaration for a var declaration of the environment config
         const replacement = types.variableDeclaration('var', [

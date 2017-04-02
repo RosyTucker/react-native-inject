@@ -1,6 +1,6 @@
 {
   "name": "react-native-inject",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React native babel plugin for injecting an environment",
   "main": "index.js",
   "scripts": {
