@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-env-inject",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Babel plugin for injecting an environment",
   "main": "index.js",
   "scripts": {
